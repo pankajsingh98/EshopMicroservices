@@ -3,9 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{341119D3-374F-4CBE-8F39-BFED835EF94C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{FA681EB8-10B7-423D-A232-08137839EDEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{2411B31B-4C5B-41E0-B519-ED3810633443}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{BC0D227A-8B35-4B27-BAE1-2F4B810845D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{00E971E2-2FBE-4243-97F3-E113C1A343A7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00E971E2-2FBE-4243-97F3-E113C1A343A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E971E2-2FBE-4243-97F3-E113C1A343A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E971E2-2FBE-4243-97F3-E113C1A343A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E971E2-2FBE-4243-97F3-E113C1A343A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA681EB8-10B7-423D-A232-08137839EDEB} = {341119D3-374F-4CBE-8F39-BFED835EF94C}
+		{00E971E2-2FBE-4243-97F3-E113C1A343A7} = {FA681EB8-10B7-423D-A232-08137839EDEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B20FEE6-CF39-4E09-9D4F-AB18E4863E7D}
